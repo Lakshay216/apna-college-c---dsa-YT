@@ -23,6 +23,6 @@ void prime(int total)
 }
 
 int main(){
-    prime(10);
+    prime(15);
     return 0;
 }
