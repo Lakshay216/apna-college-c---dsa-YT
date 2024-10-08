@@ -2,7 +2,7 @@
 # include <vector>
 using namespace std;
 
-bool isValid(vector<int> arr,int n ,int m ,int maxAllowedTime){
+bool isValid(vector<int> &arr,int n ,int m ,int maxAllowedTime){
     int painter =1;
     int time=0;
     for(int i=0;i<n;i++){ //O(n)
@@ -16,7 +16,7 @@ bool isValid(vector<int> arr,int n ,int m ,int maxAllowedTime){
     return painter <=m;
 }
 
-int minTimeToPaint(vector<int> arr,int n,int m){
+int minTimeToPaint(vector<int> &arr,int n,int m){
 int sum =0,maxVal =INT_MIN;
 
 for(int i=0;i<arr.size();i++){//0(log(sum)*n)
